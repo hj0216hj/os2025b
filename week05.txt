@@ -9,7 +9,8 @@ cp 원본파일 복사본 파일
 
 깃명령
 git reset
-
+git merge 브랜치명 
 
 기타
 .gitignore 파일 생성 (*.exe)
+package, import, func, Println, Printf, {}, ;
