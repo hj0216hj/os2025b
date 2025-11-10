@@ -7,7 +7,7 @@ import (
 
 // Ctrl+F5
 func main() {
-	//zero
+	//zer
 	var f64 float64
 	var i16 int16
 	var t bool
