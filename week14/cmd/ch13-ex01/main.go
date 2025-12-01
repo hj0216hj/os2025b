@@ -12,9 +12,15 @@ func say(msg string) {
 	}
 }
 
+func hi(msg string) {
+	time.Sleep(3000 * time.Millisecond)
+	fmt.Println(msg)
+}
+
 func main() {
 	start := time.Now()
-	say("고루틴") // 새 고루틴에서 실행
-	say("메인")  // 메인 고루틴에서 실행
-	fmt.Println("전체 실행 시간 : ", time.Since((start)))
+	go hi("고루틴2")                // 새 고루틴에서 실행
+	go say("고루틴1")               // 새 고루틴에서 실행
+	time.Sleep(10 * time.Second) // 메인 고루틴 대기
+	fmt.Println("전체 실행 시간 : ", time.Since(start))
 }
